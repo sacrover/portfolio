@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>devfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.bundle.css">
+  <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+</head>
+
+<body>
+  <!-- <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-item is-hidden-desktop">
+        <a href="https://fullstackmark.com" class="icon is-large has-text-light">
+          <i class="fas fa-2x fa-globe"></i>
+        </a>
+      </div>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a href="https://github.com/sacrover" class="icon is-large has-text-light">
+            <i class="fab fa-2x fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+  <section class="hero is-primary" id="vanta-background">
+    <div class="hero-body">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a href="https://github.com/sacrover" class="icon is-large has-text-light">
+            <i class="fab fa-2x fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="level">
+          <div class="level-item has-text-centered">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src="img/dp.jpeg">
+            </figure>
+          </div>
+        </div>
+        <div class="columns has-text-centered">
+          <div class="column">
+            <h1 class="title is-1">
+              Sachin Verma
+            </h1>
+            <h2 class="subtitle">
+              <br>
+              Robotics & AI<br>
+              Toronto, CA
+            </h2>
+            <p>
+              <!-- <a href="docs/resume.txt" class="icon has-text-light">
+                <i class="fas fa-file-word"></i> <strong>Resume</strong>
+              </a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <br>
+      <!-- <h1 class="title">About Me</h1> -->
+      <p class="bio">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages</p>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Projects</h1>
+      <hr />
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <!-- Row 1 -->
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <article class="tile is-child notification project-card modal-trigger" data-target="project-1-modal">
+                <div class="title">
+                  <p class="title is-4">Trailbot</p>
+                </div>
+                <figure class="image">
+                  <img src="img/trailbot.gif" alt="Trailbot" />
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent is-6">
+              <article class="tile is-child notification project-card modal-trigger" data-target="project-2-modal">
+                <div class="title">
+                  <p class="title is-4">Autonomous Drone Navigation</p>
+                </div>
+                <figure class="image">
+                  <img src="img/drone_racing_cover.png" alt="Autonomous Drone Navigation" />
+                </figure>
+              </article>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <article class="tile is-child notification project-card modal-trigger" data-target="project-3-modal">
+                <div class="title">
+                  <p class="title is-4">Terrain Traversability Mapping</p>
+                </div>
+                <figure class="image">
+                  <img src="img/nav2_plugin.gif" alt="Terrain Traversability Mapping" />
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent is-6">
+              <article class="tile is-child notification project-card modal-trigger" data-target="project-4-modal">
+                <div class="title">
+                  <p class="title is-4">Multi Robot Task Planning Optimization</p>
+                </div>
+                <figure class="image">
+                  <img src="img/mrta.gif" alt="Multi Robot Task Planning" />
+                </figure>
+              </article>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <article class="tile is-child notification project-card modal-trigger" data-target="project-5-modal">
+                <div class="title">
+                  <p class="title is-4">Visual SLAM in <br>Motion Blur</p>
+                </div>
+                <figure class="image">
+                  <img src="img/vslam.gif" alt="Visual SLAM in Motion Blur" />
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent is-6">
+              <article class="tile is-child notification project-card modal-trigger" data-target="project-6-modal">
+                <div class="title">
+                  <p class="title is-4">LiDAR Depth Regularized Gaussian Splatting</p>
+                </div>
+                <figure class="image">
+                  <img src="img/3DGScover.gif" alt="LiDAR Depth Regularized Gaussian Splatting" />
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Experience</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/ns.jpeg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">NewSpace Research & Technologies</p>
+              <p class="subtitle is-6">Design Engineer II, Aerospace Systems - <time datetime="2019-11">November
+                  2019</time> - <time datetime="2022-6">June 2022</time></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/trail_logo.jpeg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Toronto Robotics and Artificial Intelligence Lab (TRAIL)</p>
+              <p class="subtitle is-6">Project Assistant - <time datetime="2024-1">January 2024</time> - <time
+                  datetime="2024-9">September 2024</time> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/utat-logo.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">UofT Autonomous Drone Racing (UTADR)</p>
+              <p class="subtitle is-6">Computer Vision Research Lead - <time datetime="2022-10">October 2023</time> -
+                <time datetime="2024-9">September 2024</time>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- <section class="section">
+    <div class="container">
+      <h1 class="title">Education / Training</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">University of Toronto, Institute for Aerospace Studies</p>
+            <p class="subtitle is-6">Master of Engineering in Aerospace Studies (Robotics Emphasis)</p>
+            <p class="subtitle is-6"><time datetime="2016-9">September 2016</time> - <time datetime="2019-9">Sepemter
+                2019</time></p>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris.
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Punjab Engineering College</p>
+            <p class="subtitle is-6">Bachelor in Aerospace Engineering (Honours)</p>
+            <p class="subtitle is-6"><time datetime="2015-8">August 2015</time> - <time datetime="2019-5">May
+                2019</time></p>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris.
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section">
+    <div class="container">
+      <!-- <h1 class="title">Contact</h1> -->
+      <hr />
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://github.com/sacrover" class="icon is-large">
+              <i class="fab fa-2x fa-github"></i>
+            </a>
+            <p class="heading"><a href="https://github.com/sacrover">github.com/sacrover</a></p>
+          </div>
+        </div>
+        <!-- <div class="level-item has-text-centered">
+          <div>
+            <a href="https://fullstackmark.com" class="icon is-large">
+              <i class="fas fa-2x fa-globe"></i>
+            </a>
+            <p class="heading"><a href="https://fullstackmark.com">fullstackmark.com</a></p>
+          </div>
+        </div> -->
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="mailto:r.vermasachin@gmail.com" class="icon is-large">
+              <i class="fas fa-2x fa-envelope"></i>
+            </a>
+            <p class="heading"><a href="mailto:markmacneil@gmail.com">r.vermasachin@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://www.linkedin.com/in/vermasv" class="icon is-large">
+              <i class="fab fa-2x fa-linkedin-in"></i>
+            </a>
+            <p class="heading"><a href="https://www.linkedin.com/in/vermasv">linkedin</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="project-1-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Trail Navigation Robot</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body is-scrollable">
+
+        <div id="project-1-modal-carousel" class="carousel">
+          <figure class="image carousel-cell">
+            <img src="img/carousel/trailbot/4frames.gif" style="object-fit: contain; width: 100%; height: 100%;">
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/trailbot/FSM.png" style="object-fit: contain; width: 100%; height: 100%;">
+            <figcaption class="carousel-caption">Trailbot - State Machine Model</figcaption>
+          </figure>
+        </div>
+        <div class="content">
+          <ul>
+            <li>
+              <strong>Hardware Integration:</strong> Integrated LiDAR, IMU, camera,
+              servos with the Husky AGV platform. Performed LiDAR and camera pose calibration.
+            </li>
+            <li>
+              <strong>Servo Control Development:</strong> Designed and implemented a servo control service using
+              micro-ROS on Arduino Due for smooth snack dispensing.
+            </li>
+            <li>
+              <strong>SLAM Tuning and Sensor Fusion:</strong> Optimized Cartographer SLAM with 3D LiDAR and IMU
+              data over a set outdoor trail environment tests.
+            </li>
+            <li>
+              <strong>Human Detection and Tracking:</strong> Deployed YOLOv7 for human detection for real-time
+              tracking and safe robot-human interactions.
+            </li>
+            <li>
+              <strong>Trail-Aware Navigation:</strong> Developed a navigation commander node based on real-time trail
+              segmentation using a Lightweight Encoder-Decoder Architecture. Trained the architecture on custom labeled
+              trail environments.
+            </li>
+            <li>
+              <strong>State Machine Design:</strong> Designed a robust state machine to coordinate all system
+              components, enabling adaptive decision-making for navigation, human interaction, and dispensing tasks.
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <div class="tags">
+          <span class="tag is-link is-light">Python</span>
+          <span class="tag is-link is-light">embedded C</span>
+          <span class="tag is-link is-light">ROS</span>
+          <span class="tag is-link is-light">SLAM</span>
+          <span class="tag is-link is-light">Computer Vision</span>
+          <span class="tag is-link is-light">Solidworks</span>
+          <span class="tag is-link is-light">System Design</span>
+        </div>
+
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-2-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Autonomous Drone Navigation</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body is-scrollable">
+
+        <div id="project-2-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell flex-iframe-container">
+            <iframe src="https://drive.google.com/file/d/1lYEanCVTnnnJug5W6WDkEJq7CP8EfkJ-/preview"
+              allow="autoplay"></iframe>
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/racing/pybullet-sim.png" style="object-fit: contain; width: 90%; height: 90%;">
+            <figcaption class="carousel-caption">PyBullet Simulation on different gate sequences</figcaption>
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/racing/rrt-planner-uav.png" style="object-fit: contain; width: 90%; height: 90%;">
+            <figcaption class="carousel-caption">RRT Planner: Snapshots of waypoint refinement between gates
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>Designed and tuned <strong>PID position and attitude controllers</strong> for Crazyflie.</li>
+            <li>Implemented <strong>RRT*</strong> path planning with <strong>node filtering</strong> to reduce
+              computational complexity and improve path efficiency.</li>
+            <li>Used <strong>PCHIP spline interpolation</strong> to generate second-order smooth trajectories with
+              continuous velocity and acceleration profiles.</li>
+            <li>Simulated the drone maneuvers and track timing in <strong>PyBullet</strong> simulator</li>
+            <li>Deployed the trajectory plans and controller on the Crazyflie for <strong>real-time</strong> tests (see
+              video).</li>
+          </ul>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <div class="tags">
+          <span class="tag is-link is-light">Python</span>
+          <span class="tag is-link is-light">Pybullet</span>
+          <span class="tag is-link is-light">RRT*</span>
+          <span class="tag is-link is-light">PID Control</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-3-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Terrain Traversability Mapping</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+
+      <section class="modal-card-body is-scrollable">
+
+
+        <div id="project-3-modal-carousel" class="carousel">
+          <figure class="image carousel-cell">
+            <img src="img/carousel/nav2/result.png">
+            <figcaption class="carousel-caption">Traversability analysis in different scenarios</figcaption>
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="img/carousel/nav2/costmap.png" style="object-fit: contain; width: 95%; height: 95%;">
+            <figcaption class="carousel-caption">Integrated traversability map in Nav2</figcaption>
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/nav2/terrain-map.png">
+            <figcaption class="carousel-caption">Live terrain map in RViz</figcaption>
+          </figure>
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>Developed a C++ costmap plugin for Navigation2. The plugin generates costmaps using terrain
+              traversability constraints, improving path planning over rough terrains.</li>
+            <li>Implemented <strong>Kalman filter-based map fusion </strong> to refine height estimates of the terrain.
+            </li>
+            <li>Created a real-time terrain structure visualization plugin for RViz. Utilized <strong>OGRE 3D</strong>
+              and
+              custom ROS
+              message types to render surface representation of the scene.</li>
+            <li>Integrated and tested the plugin with ROS 2 Navigation2 stack as an additional traversability costmap
+              layer real-time navigation.</li>
+          </ul>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <div class="tags">
+          <span class="tag is-link is-light">ROS</span>
+          <span class="tag is-link is-light">nav2</span>
+          <span class="tag is-link is-light">C++</span>
+          <span class="tag is-link is-light">OGRE3D</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Multi Robot Planning Optimization</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body is-scrollable">
+        <div id="project-4-modal-carousel" class="carousel">
+          <figure class="image carousel-cell">
+            <img src="img/carousel/mrta/WarehouseConcept.png ">
+            <figcaption class=" carousel-caption">MRTA Concept diagram</figcaption>
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/mrta/warehouse_graph.png" style="object-fit: contain; width: 100%; height: 100%;">
+            <figcaption class="carousel-caption">Sample graph representation of a warehouse </figcaption>
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/mrta/overlay_map.png" style="object-fit: contain; width: 100%; height: 100%;">
+            <figcaption class="carousel-caption">Graph and Gazebo's Tugbot warehouse layout overlay</figcaption>
+          </figure>
+          <figure class="image carousel-cell flex-iframe-container">
+            <iframe src="https://drive.google.com/file/d/1fV4FItd3-F55rCV_47_x-mx98Nppmx2w/preview"
+              allow="autoplay"></iframe>
+            <figcaption class="carousel-caption" style="background-color: rgb(255, 255, 255);"> <strong>Active duration
+                of robots
+                (over 50
+                tasks)</strong>
+            </figcaption>
+          </figure>
+          <figure class="image  carousel-cell flex-iframe-container">
+            <iframe src="https://drive.google.com/file/d/1TavtWaZZ8KASrij4g7t7vomUoPswesAR/preview"
+              allow="autoplay"></iframe>
+            <figcaption class="carousel-caption" style="background-color: rgb(255, 255, 255);"> <strong>Battery
+                depletion of robots (over 50
+                tasks)</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>Implemented Discrete Adaptive Particle Swarm Optimzation (DAPSO) to solve the multi-robot task
+              allocation problem
+              for near-optimal task distribution under realistic constraints.</li>
+            <li>Developed a graph-based warehouse model in networkX. This model enabled efficient task allocation and
+              smooth path planning for the robots.</li>
+            <li>Demonstrated a PoC simulation of mulit-robot operation in Gazebo based on the optimization results.</li>
+            <li>Implemented the Regulated Pure Pursuit controller and adjusted its parameters for better lane-following
+              behavior. This allowed the robots to navigate more effectively in the warehouse.</li>
+            <li>Integrated a collision avoidance system alongside junction preference logic. This ensured safe and
+              efficient navigation through complex layouts with minimal conflicts.</li>
+          </ul>
+          <br>
+          <br>
+          <br>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <div class="tags">
+          <span class="tag is-link is-light">Python</span>
+          <span class="tag is-link is-light">Gazebo</span>
+          <span class="tag is-link is-light">ROS</span>
+          <span class="tag is-link is-light">Particle Swarm Optimization</span>
+          <span class="tag is-link is-light">A*</span>
+          <span class="tag is-link is-light">Pure Pursuit Controller</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-5-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Improving Visual SLAM in Motion Blur</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body is-scrollable">
+
+        <div id="project-5-modal-carousel" class="carousel">
+          <figure class="carousel-cell">
+            <img src="img/carousel/vslam/kerenelORB.png">
+            <figcaption class=" carousel-caption">Kernel ORB Feature Extraction</figcaption>
+          </figure>
+          <figure class="carousel-cell">
+            <img src="img/carousel/vslam/dataset.png" style="object-fit: contain; width: 100%; height: 100%;">
+            <figcaption class="carousel-caption">Dataset Overview</figcaption>
+          </figure>
+          <figure class="image carousel-cell flex-iframe-container">
+            <iframe src="https://drive.google.com/file/d/1bE9DyTmPTKeO9DBVXhXF9Emy2_zp4_wq/preview"
+              allow="autoplay"></iframe>
+            <figcaption class="carousel-caption" style="background-color: rgb(255, 255, 255);"> <strong>Visual Odometry
+                without Deblurring (Poor tracking during
+                turns)</strong></figcaption>
+          </figure>
+          <figure class="image  carousel-cell flex-iframe-container">
+            <iframe src="https://drive.google.com/file/d/13OTF_qiW_G41wrRZ6lBlE477iP92roZC/preview"
+              allow="autoplay"></iframe>
+            <figcaption class="carousel-caption" style="background-color: rgb(255, 255, 255);"> <strong>Visual Odometry
+                with Deblurring (Good tracking)</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>Developed a pipeline integrating deep deblurring networks with ORB SLAM3 to <strong>improve tracking
+                accuracy</strong> in
+              visually degraded environments affected by motion blur.</li>
+            <li>Designed and implemented a <strong>keypoint filtering algorithm</strong> based on blur kernel intensity
+              to enhance
+              feature matching and tracking in blurry frames.</li>
+            <li><strong>Curated a synthetic dataset</strong> in Unity3D to simulate various blur intensities for
+              controlled testing of
+              deblurring and tracking performance.</li>
+            <li>Conducted benchmark testing on the EuROC MAV dataset, demonstrating up to <strong>45%
+                improvement</strong> in pose
+              tracking accuracy with the proposed deblurring pipeline.</li>
+          </ul>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <div class="tags">
+          <span class="tag is-link is-light">C#</span>
+          <span class="tag is-link is-light">C++</span>
+          <span class="tag is-link is-light">SLAM</span>
+          <span class="tag is-link is-light">Deep Learning</span>
+          <span class="tag is-link is-light">Blender</span>
+          <span class="tag is-link is-light">Unity3D</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+
+  <div id="project-6-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Improving Visual SLAM in Motion Blur</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body is-scrollable">
+
+        <div id="project-6-modal-carousel" class="carousel">
+          <figure class="carousel-cell">
+            <div class="carousel-item">
+              <img src="img/carousel/3dgs/results.png" style="object-fit: contain; width: 100%; height: 100%;">
+              <figcaption class="carousel-text">RGB and Depth Rendering Comparison</figcaption>
+            </div>
+          </figure>
+          <figure class="carousel-cell">
+            <div class="carousel-item">
+              <img src="img/carousel/3dgs/COLMAP-nuScenes.png" style="object-fit: contain; width: 100%; height: 100%;">
+              <figcaption class="carousel-text">Nuscenes dataset setup for 3DGS </figcaption>
+            </div>
+          </figure>
+          <figure class="carousel-cell">
+            <div class="carousel-item">
+              <img src="img/carousel/3dgs/lidar_depth.png" style="object-fit: contain; width: 100%; height: 100%;">
+              <figcaption class="carousel-text">Depth Estimation with LiDAR data for 3DGS regularization</figcaption>
+            </div>
+          </figure>
+        </div>
+
+
+        <div class="content">
+          <ul>
+            <li>
+              <strong>Depth Regularization Integration:</strong> Developed a LiDAR depth regularization for 3DGS
+              optimization adding a CUDA depth rasterizer to the optimization pipeline.
+
+            </li>
+            <li>
+              <strong>Dataset and Evaluation:</strong> Conducted experiments in NuScenes dataset to compare the
+              performance of the depth-regularized 3DGS method against the original implementation.
+            </li>
+            <li>
+              <strong>Qualitative and Quantitative Improvements:</strong> Brought improvements in depth accuracy
+              and comparable RGB renders, with a notable reduction in visual artifacts during novel view synthesis.
+            </li>
+            <li>
+              <strong>3D LiDAR Point Cloud Segmentation:</strong> Utilized depth-regularized 3DGS-rendered images for
+              image as well as LiDAR point cloud segmentation.
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <div class="tags">
+          <span class="tag is-link is-light">SfM/MVS</span>
+          <span class="tag is-link is-light">Python</span>
+          <span class="tag is-link is-light">CUDA</span>
+          <span class="tag is-link is-light">Computer Vision</span>
+          <span class="tag is-link is-light">PCL</span>
+          <span class="tag is-link is-light">Novel view Rendering</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <a href="https://github.com/mmacneil/devfolio" target="_blank" class="icon has-text-primary">
+          <i class="fab fa-github"></i> <strong>devfolio</strong></a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    VANTA.BIRDS({
+      el: "#vanta-background", // target the element by its ID
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      colorMode: "lerp",
+      birdSize: 1.10,
+      wingSpan: 38.00,
+      speedLimit: 7.00,
+      separation: 100.00,
+      alignment: 10.00,
+      cohesion: 18.00,
+      quantity: 2.00
+    });
+  </script>
+  <script src="js/bundle.js"></script>
+
+</body>
+
+</html>
