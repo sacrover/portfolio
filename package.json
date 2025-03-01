@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://sacrover.github.io/portfolio",
   "version": "1.0.0",
   "description": "My portfolio built with Bulma, Sass, Font Awesome and Flickity.",
   "main": "webpack.config.js",
@@ -7,9 +8,12 @@
   "author": "Sachin Verma",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "ajv": "^7.2.4",
     "bulma": "^0.9.3",
     "css-loader": "^6.3.0",
     "css-minimizer-webpack-plugin": "^3.0.2",
