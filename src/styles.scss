@@ -58,6 +58,14 @@ a.icon > strong {
   min-height: auto;
 }
 
+.navbar-end {
+  display: flex;
+  justify-content: flex-end; /* Align the navbar-item to the right */
+}
+.navbar-item a {
+  margin-left: auto; /* Keeps the icon right-aligned on mobile */
+}
+
 @media (max-width: 767px) {
   .modal-card-title,
   .is-4,
@@ -92,6 +100,7 @@ a.icon > strong {
     max-height: 90%;
     width: 70%; /* 80% width for modal */
     min-width: 600px;
+    max-width: 1080px;
   }
 
   .modal-card-body {
@@ -217,7 +226,7 @@ a.icon > strong {
   object-fit: contain; /* Ensure the image maintains its aspect ratio */
   margin: 0 auto; /* Center the image */
   padding-bottom: 1.5rem;
-  padding-left: 2.5rem;
+  padding-left: 0.5rem;
   justify-content: center;
 }
 
@@ -236,10 +245,26 @@ a.icon > strong {
 
 // Flickity - end
 
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns content to the right */
+  gap: 6px; /* Space between text and icon */
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  margin-top: 10px; /* Adds space above the GitHub section */
+  padding: 0.5rem; /* Adds padding around the GitHub section */
+}
+
+.github-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex-iframe-container {
   position: relative;
-  width: 90%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  width: 100%;
+  // padding-top: 56.25%; /* 16:9 Aspect Ratio */
   overflow: hidden;
   margin-bottom: 1rem;
 }
