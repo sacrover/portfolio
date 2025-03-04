@@ -54,6 +54,10 @@ a.icon > strong {
   justify-content: space-between;
 }
 
+.tile {
+  min-height: auto;
+}
+
 @media (max-width: 767px) {
   .modal-card-title,
   .is-4,
@@ -86,8 +90,8 @@ a.icon > strong {
   .modal-content {
     margin: 0 auto;
     max-height: 90%;
-    width: 50%; /* 80% width for modal */
-    min-width: 500px;
+    width: 70%; /* 80% width for modal */
+    min-width: 600px;
   }
 
   .modal-card-body {
@@ -122,6 +126,10 @@ a.icon > strong {
     display: flex;
     align-items: center;
     height: 100%;
+  }
+
+  .tile {
+    min-height: auto;
   }
 }
 
@@ -200,14 +208,16 @@ a.icon > strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .carousel-cell img {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 95%;
   object-fit: contain; /* Ensure the image maintains its aspect ratio */
   margin: 0 auto; /* Center the image */
   padding-bottom: 1.5rem;
+  padding-left: 2.5rem;
   justify-content: center;
 }
 
@@ -228,19 +238,10 @@ a.icon > strong {
 
 .flex-iframe-container {
   position: relative;
-  width: 100%;
+  width: 90%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   overflow: hidden;
   margin-bottom: 1rem;
-}
-
-.flex-iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 
 .flex-iframe-container iframe {

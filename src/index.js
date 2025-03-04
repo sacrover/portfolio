@@ -60,6 +60,7 @@ function closeModals() {
 function initCarousel(id) {
   return new Flickity("#" + id, {
     imagesLoaded: true,
+    cellAlign: "right",
     adaptiveHeight: true, // https://github.com/metafizzy/flickity/issues/11
     lazyLoad: 2,
   });
