@@ -31,28 +31,34 @@ if ($modalCloses.length > 0) {
 
 function openModal(target) {
   var $target = document.getElementById(target);
+  if (!$target) return; // Ensure target exists
+
   rootEl.classList.add("is-clipped");
   $target.classList.add("is-active");
-  var carouselId = target + "-carousel";
 
+  // Push a new history state only if it's not already in the history stack
+  if (!history.state || history.state.modal !== target) {
+    history.pushState({ modal: target }, "", "#" + target);
+  }
+
+  var carouselId = target + "-carousel";
   if (document.querySelector("#" + carouselId)) {
-    // Initialize each carousel one time only
-    if ($carousels.length === 0) {
+    if ($carousels.findIndex((c) => c.element.id == carouselId) === -1) {
       $carousels.push(initCarousel(carouselId));
-    } else {
-      var index = $carousels.findIndex((c) => c.element.id == carouselId);
-      if (index === -1) {
-        $carousels.push(initCarousel(carouselId));
-      }
     }
   }
 }
 
 function closeModals() {
   rootEl.classList.remove("is-clipped");
-  $modals.forEach(function ($el) {
+  $modals.forEach(($el) => {
     $el.classList.remove("is-active");
   });
+
+  // Remove the modal state from history when closed
+  if (history.state && history.state.modal) {
+    history.replaceState(null, "", window.location.pathname);
+  }
 }
 
 // Functions
@@ -112,5 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.key === "Escape" && popup.style.display === "flex") {
       popup.style.display = "none";
     }
+  });
+
+  window.addEventListener("popstate", function (event) {
+    closeModals();
   });
 });
